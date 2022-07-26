@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Виктория Юрлова](https://up.htmlacademy.ru/adaptive/26/user/2086233).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
