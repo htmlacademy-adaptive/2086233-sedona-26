@@ -43,12 +43,12 @@
       <img class="sedona-sight__divider" src="../images/divider-catalog.svg" alt="" width="1201" height="57">
     </div>
     <section class="user-review">
-      <div class="review">
+      <div class="user-review__ask review">
         <h1 class="review__title">Оставьте свой отзыв</h1>
         <span class="review__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
           достопримечательностях</span>
       </div>
-      <form class="form-review" action="https://echo.htmlacademy.ru/" method="get">
+      <form class="user-review__form form-review" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="form-review__full-name user-name">
           <legend class="user-name__title">Представьтесь&#58;</legend>
           <ul class="user-name__list full-initials">
@@ -57,12 +57,12 @@
               <input class="text-input" type="text" name="first-name" id="first-name" value="Пётр" required>
             </li>
             <li class="full-initials__item">
-              <label class="name" for="second-name">ФАМИЛИЯ*:</label>
-              <input class="text-input" type="text" name="second-name" id="second-name" value="Пустота" required>
+              <label class="full-initials__name" for="second-name">ФАМИЛИЯ*:</label>
+              <input class="full-initials__input" type="text" name="second-name" id="second-name" value="Пустота" required>
             </li>
             <li class="full-initials__item">
-              <label class="name" for="patronymic">ОТЧЕСТВО:</label>
-              <input class="text-input" type="text" name="patronymic" id="patronymic" value="Викторович">
+              <label class="full-initials__name" for="patronymic">ОТЧЕСТВО:</label>
+              <input class="full-initials__input" type="text" name="patronymic" id="patronymic" value="Викторович">
             </li>
           </ul>
         </fieldset>
@@ -70,13 +70,13 @@
           <legend class="user-contacts__title">Контактная информация&#58;</legend>
           <ul class="user-contacts__list contact">
             <li class="contact__item">
-              <label class="contact" for="telephone">Контактный телефон*:</label>
-              <input class="text-input" type="text" name="telephone" id="telephone" placeholder="Введите телефон"
+              <label class="contact__channel" for="telephone">Контактный телефон*:</label>
+              <input class="contact__input" type="text" name="telephone" id="telephone" placeholder="Введите телефон"
                 required>
             </li>
             <li class="contact__item">
-              <label class="contact" for="user-mail">Электронная почта*:</label>
-              <input class="text-input" type="e-mail" name="user-mail" id="user-mail" placeholder="Введите e-mail"
+              <label class="contact__channel" for="user-mail">Электронная почта*:</label>
+              <input class="contact__input" type="e-mail" name="user-mail" id="user-mail" placeholder="Введите e-mail"
                 required>
             </li>
           </ul>
@@ -84,38 +84,38 @@
         <fieldset class="form-review__impression user-experience">
           <legend class="user-experience__title">ВАше Общее впечатление:</legend>
           <ul class="user-experience__list experience">
-            <li class="experience__item">
-              <label class="mark" for="good-experience">Скорее положительное</label>
-              <input class="mark-input" type="radio" name="good-experience" id="good-experience" checked>
+            <li class="user-experience__item">
+              <label class="user-experience__mark" for="good-experience">Скорее положительное</label>
+              <input class="user-experience__input" type="radio" name="good-experience" id="good-experience" checked>
             </li>
-            <li class="experience__item">
-              <label class="mark" for="bad-experience">Скорее отрицательное</label>
-              <input class="mark-input" type="radio" name="bad-experience" id="bad-experience">
+            <li class="user-experience__item">
+              <label class="user-experience__mark" for="bad-experience">Скорее отрицательное</label>
+              <input class="user-experience__input" type="radio" name="bad-experience" id="bad-experience">
             </li>
-            <li class="experience__item">
-              <label class="mark" for="doubtful-experience">Затрудняюсь ответить</label>
-              <input class="mark-input" type="radio" name="doubtful-experience" id="doubtful-experience">
+            <li class="user-experience__item">
+              <label class="user-experience__mark" for="doubtful-experience">Затрудняюсь ответить</label>
+              <input class="user-experience__input" type="radio" name="doubtful-experience" id="doubtful-experience">
             </li>
           </ul>
         </fieldset>
         <fieldset class="form-review__sights visited-places">
           <legend class="visited-places__title">Посещенные достопримечательности:</legend>
           <ul class="visited-places__list place">
-            <li class="place__item">
-              <label class="control" for="devil-bridge">Мост Дьявола</label>
-              <input class="control-input" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
+            <li class="visited-places__item">
+              <label class="visited-places__control" for="devil-bridge">Мост Дьявола</label>
+              <input class="visited-places__input" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
             </li>
-            <li class="place__item">
-              <label class="control" for="bell-mountain">Гора-Колокол</label>
-              <input class="control-input" type="checkbox" name="bell-mountain" id="bell-mountain" checked>
+            <li class="visited-places__item">
+              <label class="visited-places__control" for="bell-mountain">Гора-Колокол</label>
+              <input class="visited-places__input" type="checkbox" name="bell-mountain" id="bell-mountain" checked>
             </li>
-            <li class="place__item">
-              <label class="control" for="slide-park">Слайд-парк</label>
-              <input class="control-input" type="checkbox" name="slide-park" id="slide-park" checked>
+            <li class="visited-places__item">
+              <label class="visited-places__control" for="slide-park">Слайд-парк</label>
+              <input class="visited-places__input" type="checkbox" name="slide-park" id="slide-park" checked>
             </li>
-            <li class="place__item">
-              <label class="control" for="red-rocks">Красные скалы</label>
-              <input class="control-input" type="checkbox" name="red-rocks" id="red-rocks">
+            <li class="visited-places__item">
+              <label class="visited-places__control" for="red-rocks">Красные скалы</label>
+              <input class="visited-places__input" type="checkbox" name="red-rocks" id="red-rocks">
             </li>
           </ul>
         </fieldset>
