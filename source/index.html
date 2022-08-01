@@ -8,8 +8,8 @@
 
 <body>
   <header class="page-header">
-    <nav class="page-header__navigation navigation navigation-closed-menu">
-      <a class="navigation__logo" href="index.html">
+    <nav class="page-header__navigation navigation navigation-opened-menu">
+      <a class="navigation__logo visually-hidden" href="index.html">
         <img class="logo__link" src="../images/logo.svg" alt="Лого Седоны" height="96" width="185">
       </a>
       <ul class="navigation__navigation-list">
@@ -26,15 +26,7 @@
           <a class="navigation-link" href="http://htmlacademy.ru">HTML Academy</a>
         </li>
       </ul>
-      <button class="button-close" type="button">
-        <span class="visually-hidden">Закрыть меню.</span>
-        <svg aria-hidden="true" focusable="false" width="23" height="23" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z"
-            fill="currentColor" />
-        </svg>
-      </button>
-      <button class="button-menu" type="button">
+      <button class="button-menu visually-hidden" type="button">
         <span class="visually-hidden">Открыть меню.</span>
         <svg aria-hidden="true" focusable="false" width="23" height="22" viewBox="0 0 23 22" fill="currentColor"
           xmlns="http://www.w3.org/2000/svg">
@@ -43,6 +35,15 @@
           <path d="M22.9 18H0V22H22.9V18Z" />
         </svg>
       </button>
+      <button class="button-close" type="button">
+        <span class="visually-hidden">Закрыть меню.</span>
+        <svg aria-hidden="true" focusable="false" width="23" height="23" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z"
+            fill="currentColor" />
+        </svg>
+      </button>
+
     </nav>
   </header>
   <main class="main-container">
@@ -62,10 +63,10 @@
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества.</h2>
       <ul class="advantages__wrapper advantages-list">
-        <li class="advantages-list__advantages-item-1">
-          <h3 class="advantage-title">Настоящий городок</h3>
-          <span class="advantage-number">&#8211;&#8470;1&#8211;</span>
-          <p class="advantage-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+        <li class="advantages-list__item advantage-item-1">
+          <h3 class="advantages-list__title advantage-title">Настоящий городок</h3>
+          <span class="advantages-list__number advantage-number">&#8211;&#8470;1&#8211;</span>
+          <p class="advantages-list__description advantage-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           <img class="town-sight" src="../images/town-sight-advantage-1.jpg" alt="Вид города" width="520" height="260">
           <ul class="advantages-list__features features-list">
             <li class="features-list__item features-wrap">
@@ -88,27 +89,27 @@
             </li>
           </ul>
         </li>
-        <li class="advantages-list__advantages-item-2">
-          <h3 class="advantage-title">Там есть мост дьявола</h3>
-          <span class="advantage-number">&#8211;&#8470;2&#8211;</span>
-          <p class="advantage-description">Да, по нему можно пройти&#33; Если вы осмелитесь, конечно</p>
+        <li class="advantages-list__item advantage-item-2">
+          <h3 class="advantages-list__title advantage-title">Там есть мост дьявола</h3>
+          <span class="advantages-list__number advantage-number">&#8211;&#8470;2&#8211;</span>
+          <p class="advantages-list__description advantage-description">Да, по нему можно пройти&#33; Если вы осмелитесь, конечно</p>
           <img class="bridge-image" src="../images/devil-bridge-advantage-2.jpg" alt="Мост дьявола" width="520"
             height="260">
         </li>
-        <li class="advantages-list__advantages-item-3">
-          <h3 class="advantage-title">Небольшая площадь</h3>
-          <span class="advantage-number">&#8211;&#8470;3&#8211;</span>
-          <p class="advantage-description">Все интересные места находятся очень близко</p>
+        <li class="advantages-list__item advantage-item-3">
+          <h3 class="advantages-list__title advantage-title">Небольшая площадь</h3>
+          <span class="advantages-list__number advantage-number">&#8211;&#8470;3&#8211;</span>
+          <p class="advantages-list__description advantage-description">Все интересные места находятся очень близко</p>
         </li>
-        <li class="advantages-list__advantages-item-4">
-          <h3 class="advantage-title">Красивая дорога</h3>
-          <span class="advantage-number">&#8211;&#8470;4&#8211;</span>
-          <p class="advantage-description">Ехать в Седону из Лас-Вегаса совсем не скучно&#33;</p>
+        <li class="advantages-list__item advantage-item-4">
+          <h3 class="advantages-list__title advantage-title">Красивая дорога</h3>
+          <span class="advantages-list__number advantage-number">&#8211;&#8470;4&#8211;</span>
+          <p class="advantages-list__description advantage-description">Ехать в Седону из Лас-Вегаса совсем не скучно&#33;</p>
         </li>
-        <li class="advantages-list__advantages-item-5">
-          <h3 class="advantage-title">Мало туристов</h3>
-          <span class="advantage-number">&#8211;&#8470;5&#8211;</span>
-          <p class="advantage-description">Большинство едет в Гранд Каньон и толпится там</p>
+        <li class="advantages-list__item advantage-item-5">
+          <h3 class="advantages-list__title advantage-title">Мало туристов</h3>
+          <span class="advantages-list__number advantage-number">&#8211;&#8470;5&#8211;</span>
+          <p class="advantages-list__description advantage-description">Большинство едет в Гранд Каньон и толпится там</p>
         </li>
       </ul>
     </section>
