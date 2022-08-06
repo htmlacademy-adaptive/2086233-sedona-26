@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -7,13 +7,13 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-  <header class="page-header">
-    <nav class="page-header__navigation navigation navigation-opened-menu">
+<body class="page__body">
+  <header class="main-header">
+    <nav class="main-header__navigation navigation">
       <a class="navigation__logo visually-hidden" href="index.html">
-        <img class="navigation__link" src="../images/logo.svg" alt="Лого Седоны" height="96" width="185">
+        <img class="link-logo" src="../images/logo.svg" alt="Лого Седоны" height="96" width="185">
       </a>
-      <ul class="navigation__list menu">
+      <ul class="navigation__list menu menu--opened">
         <li class="menu__item">
           <a class="menu__link menu__link--current" href="#">Главная</a>
         </li>
@@ -49,24 +49,25 @@
   </header>
   <main class="main-container">
     <section class="promo">
-      <div class="promo__slogan slogan">
-        <img class="slogan__sedona" src="images/welcome.svg" alt="Welcome to the gorgeous Sedona&#8220;Because Grand Canyon
+      <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
+      <div class="promo__slogan">
+        <img class="slogan-sedona" src="images/welcome.svg" alt="Welcome to the gorgeous Sedona&#8220;Because Grand Canyon
     sucks&#33;&#8221;" width="282" height="214">
       </div>
       <div class="promo__top-divider">
         <img class="divider__picture" src="../images/divider-catalog.svg" alt="" width="320" height="57">
       </div>
       <div class="promo__need-visit">
-        <h1 class="promo__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <h2 class="promo__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p class="promo__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон! </p>
       </div>
-      <div class="promo__divider divider">
+      <div class="promo__bottom-divider">
         <img class="divider__picture" src="../images/promo-bottom-divider-mobile.svg" alt="" width="320" height="37">
       </div>
     </section>
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества.</h2>
-      <ul class="advantages__wrapper advantages-list">
+      <ul class="advantages__wrap advantages-list">
         <li class="advantages-list__item advantage-item-1">
           <div class="advantages-list__item--wrapper1">
           <h3 class="advantages-list__title advantage-title">Настоящий городок</h3>
@@ -106,18 +107,18 @@
         </li>
         <li class="advantages-list__item--wrapper2 advantage-item-3">
           <h3 class="advantages-list__title advantage-title">Небольшая площадь</h3>
-          <p class="advantages-list__number advantages-list__number--thin">&#8211;&#8470;3&#8211;</p>
-          <p class="advantages-list__description advantages-list__description--thin">Все интересные места находятся очень близко</p>
+          <p class="advantages-list__number advantages-list__number--thin-font">&#8211;&#8470;3&#8211;</p>
+          <p class="advantages-list__description advantages-list__description--thin-font advantages-list__description--bordered">Все интересные места находятся очень близко</p>
         </li>
         <li class="advantages-list__item--wrapper2  advantage-item-4">
           <h3 class="advantages-list__title advantage-title">Красивая дорога</h3>
-          <p class="advantages-list__number advantages-list__number--thin">&#8211;&#8470;4&#8211;</p>
-          <p class="advantages-list__description advantages-list__description--thin">Ехать в Седону из Лас-Вегаса совсем не скучно&#33;</p>
+          <p class="advantages-list__number advantages-list__number--thin-font">&#8211;&#8470;4&#8211;</p>
+          <p class="advantages-list__description advantages-list__description--thin-font advantages-list__description--bordered">Ехать в Седону из Лас-Вегаса совсем не скучно&#33;</p>
         </li>
         <li class="advantages-list__item--wrapper2 advantage-item-5">
           <h3 class="advantages-list__title advantage-title">Мало туристов</h3>
-          <p class="advantages-list__number advantages-list__number--thin">&#8211;&#8470;5&#8211;</p>
-          <p class="advantages-list__description advantages-list__description--thin">Большинство едет в Гранд Каньон и толпится там</p>
+          <p class="advantages-list__number advantages-list__number--thin-font">&#8211;&#8470;5&#8211;</p>
+          <p class="advantages-list__description advantages-list__description--thin-font">Большинство едет в Гранд Каньон и толпится там</p>
         </li>
       </ul>
     </section>
