@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -7,9 +7,9 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-  <header class="page-header">
-    <nav class="page-header__navigation navigation navigation-closed-menu">
+<body class="page__body">
+  <header class="inner-header">
+    <nav class="inner-header__navigation navigation">
       <a class="navigation__logo" href="index.html">
         <img class="navigation__link" src="../images/logo.svg" alt="Лого Седоны" height="96" width="185">
       </a>
@@ -44,16 +44,17 @@
       <img class="sedona-sight__divider" src="../images/divider-catalog.svg" alt="" width="1201" height="57">
     </div>
     <section class="content">
-      <div class="need-visit inner-promo">
-        <h1 class="inner-promo__title">Фото и видео</h1>
+      <h1 class="visually-hidden">Контент.</h1>
+      <div class="content__promo inner-promo">
+        <h2 class="inner-promo__title">Фото и видео</h2>
         <span class="inner-promo__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
           политике и экономике.</span>
       </div>
-      <ul class="photo-collection">
+      <ul class="photo-collection photo-collection--mobile">
         <li class="photo-collection__item photo-card">
-          <a class="photo-collection__link" href="#"><img class="photo-collection__photo-1" src="../images/boris-photo.jpg" alt="Фото дороги" height="280" width="280">
-          <h2 class="photo-collection__title">Неродные просторы</h2></a>
-          <span class="photo-collection__author">Автор фото: Борис</span>
+          <a class="photo-card__link" href="#"><img class="photo-card__photo" src="../images/boris-photo.jpg" alt="Фото дороги" height="280" width="280">
+          <h3 class="photo-card__title">Неродные просторы</h3></a>
+          <span class="photo-card__author">Автор фото: Борис</span>
           <div class="like-counter">
             <button class="like-counter__button"><svg aria-hidden="true" focusable="false" width="23" height="21"
                 viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
@@ -65,9 +66,9 @@
           </div>
         </li>
         <li class="photo-collection__item photo-card">
-          <a class="photo-collection__link" href="#"><img class="photo-collection__photo-2" src="../images/sergey-photo.jpg" alt="Фото кактуса" height="280" width="280">
-          <h2 class="photo-collection__title">Местная растительность</h2></a>
-          <span class="photo-collection__author">Автор фото: Сергей</span>
+          <a class="photo-card__link photo-collection__link--dark-theme" href="#"><img class="photo-card__photo" src="../images/sergey-photo.jpg" alt="Фото кактуса" height="280" width="280">
+          <h3 class="photo-card__title">Местная растительность</h3></a>
+          <span class="photo-card__author photo-collection__author--dark-theme">Автор фото: Сергей</span>
           <div class="like-counter">
             <button class="like-counter__button"><svg aria-hidden="true" focusable="false" width="23" height="21"
                 viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
@@ -79,10 +80,10 @@
           </div>
         </li>
         <li class="photo-collection__item photo-card">
-          <a class="photo-collection__link" href="#"><img class="photo-collection__photo-3" src="../images/petr-photo.jpg" alt="Фото горного серпантина" height="280" width="280">
-          <h2 class="photo-collection__title">Дорога на север</h2></a>
-          <span class="photo-collection__author">Автор фото: Петр</span>
-          <div class="like-counter">
+          <a class="photo-card__link" href="#"><img class="photo-card__photo" src="../images/petr-photo.jpg" alt="Фото горного серпантина" height="280" width="280">
+          <h3 class="photo-card__title">Дорога на север</h3></a>
+          <span class="photo-card__author">Автор фото: Петр</span>
+          <div class="photo-card__counter like-counter">
             <button class="like-counter__button"><svg aria-hidden="true" focusable="false" width="23" height="21"
                 viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
                 <path opacity="0.3"
@@ -93,9 +94,9 @@
           </div>
         </li>
         <li class="photo-collection__item photo-card">
-          <a class="photo-collection__link" href="#"><img class="photo-collection__photo-4" src="../images/anton-photo.jpg" alt="Фото каменного моста" height="280" width="280">
-          <h2 class="photo-collection__title">Мост дьявола</h2></a>
-          <span class="photo-collection__author">Автор фото: Антон</span>
+          <a class="photo-card__link" href="#"><img class="photo-card__photo" src="../images/anton-photo.jpg" alt="Фото каменного моста" height="280" width="280">
+          <h3 class="photo-card__title">Мост дьявола</h3></a>
+          <span class="photo-card__author">Автор фото: Антон</span>
           <div class="like-counter">
             <button class="like-counter__button"><svg aria-hidden="true" focusable="false" width="23" height="21"
                 viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
@@ -108,11 +109,13 @@
         </li>
       </ul>
     </section>
-    <section class="need-visit inner-promo">
+    <div class="inner-promo-wrapper">
+    <section class="inner-promo">
       <h1 class="inner-promo__title">Все еще сомневаетесь?</h1>
-        <span class="inner-promo__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</span>
+        <p class="inner-promo__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         <video class="inner-promo__presentation" poster="../images/video-presentation-mobile.jpg" src="#" width="280" height="177"> </video>
     </section>
+    </div>
   </main>
 
   <footer class="page-footer">
@@ -120,46 +123,46 @@
     <div class="page-footer__contacts socials ">
       <h2 class="socials__reference">&#35;visitSEDONA</h2>
       <div class="socials__list">
-        <span class="visually-hidden">Мы в социальных сетях.</span>
-        <ul class="socials__reference socials-list">
-          <li class="socials-list__item">
-            <a class="socials-list__link" href="https://vk.com/htmlacademy">
-              <svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_36216_981)">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M23.45 5.948C23.616 5.402 23.45 5 22.655 5H20.03C19.362 5 19.054 5.347 18.887 5.73C18.887 5.73 17.552 8.926 15.661 11.002C15.049 11.604 14.771 11.795 14.437 11.795C14.27 11.795 14.019 11.604 14.019 11.057V5.948C14.019 5.292 13.835 5 13.279 5H9.151C8.734 5 8.483 5.304 8.483 5.593C8.483 6.214 9.429 6.358 9.526 8.106V11.904C9.526 12.737 9.373 12.888 9.039 12.888C8.149 12.888 5.984 9.677 4.699 6.003C4.45 5.288 4.198 5 3.527 5H0.9C0.15 5 0 5.347 0 5.73C0 6.412 0.89 9.8 4.145 14.281C6.315 17.341 9.37 19 12.153 19C13.822 19 14.028 18.632 14.028 17.997V15.684C14.028 14.947 14.186 14.8 14.715 14.8C15.105 14.8 15.772 14.992 17.33 16.467C19.11 18.216 19.403 19 20.405 19H23.03C23.78 19 24.156 18.632 23.94 17.904C23.702 17.18 22.852 16.129 21.725 14.882C21.113 14.172 20.195 13.407 19.916 13.024C19.527 12.533 19.638 12.314 19.916 11.877C19.916 11.877 23.116 7.451 23.449 5.948H23.45Z"
-                    fill="currentColor" />
-              </svg>
-              <span class="visually-hidden">Vkontakte.</span>
-            </a>
-          </li>
-          <li class="socials-list__item">
-            <a class="socials-list__link" href="https://t.me/htmlacademy">
-              <svg aria-hidden="true" focusable="false" width="22" height="18" viewBox="0 0 22 18"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M21.4393 1.62225L18.2705 16.566C18.0313 17.6205 17.408 17.883 16.5223 17.3865L11.6938 13.8285L9.36425 16.0695C9.10626 16.3275 8.891 16.5428 8.39375 16.5428L8.741 11.6258L17.6893 3.54C18.0785 3.1935 17.6045 3.00075 17.0848 3.348L6.02225 10.314L1.25976 8.823C0.224006 8.49975 0.205256 7.78725 1.47576 7.29L20.1035 0.113253C20.966 -0.209997 21.7205 0.305253 21.4393 1.623V1.62225Z"
+      <span class="visually-hidden">Мы в социальных сетях.</span>
+      <ul class="socials-list">
+        <li class="socials-list__item">
+          <a class="socials-list__link" href="https://vk.com/htmlacademy">
+            <svg class="socials-list__svg" aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_36216_981)">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M23.45 5.948C23.616 5.402 23.45 5 22.655 5H20.03C19.362 5 19.054 5.347 18.887 5.73C18.887 5.73 17.552 8.926 15.661 11.002C15.049 11.604 14.771 11.795 14.437 11.795C14.27 11.795 14.019 11.604 14.019 11.057V5.948C14.019 5.292 13.835 5 13.279 5H9.151C8.734 5 8.483 5.304 8.483 5.593C8.483 6.214 9.429 6.358 9.526 8.106V11.904C9.526 12.737 9.373 12.888 9.039 12.888C8.149 12.888 5.984 9.677 4.699 6.003C4.45 5.288 4.198 5 3.527 5H0.9C0.15 5 0 5.347 0 5.73C0 6.412 0.89 9.8 4.145 14.281C6.315 17.341 9.37 19 12.153 19C13.822 19 14.028 18.632 14.028 17.997V15.684C14.028 14.947 14.186 14.8 14.715 14.8C15.105 14.8 15.772 14.992 17.33 16.467C19.11 18.216 19.403 19 20.405 19H23.03C23.78 19 24.156 18.632 23.94 17.904C23.702 17.18 22.852 16.129 21.725 14.882C21.113 14.172 20.195 13.407 19.916 13.024C19.527 12.533 19.638 12.314 19.916 11.877C19.916 11.877 23.116 7.451 23.449 5.948H23.45Z"
                   fill="currentColor" />
-              </svg>
-              <span class="visually-hidden">Telegram.</span>
-            </a>
-          </li>
-          <li class="socials-list__item">
-            <a class="socials-list__link" href="https://www.youtube.com/user/htmlacademyru">
-              <svg aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M19.1813 5H4.81331C3.30618 5 2 6.3 2 7.8V16.1C2 17.7 3.30618 19 4.81331 19H19.1813C20.7889 19 21.9946 17.7 21.9946 16.2V7.8C22.095 6.3 20.7889 5 19.1813 5ZM9.03326 15.4V8.6L15.8656 12L9.03326 15.4Z"
-                  fill="currentColor" />
-              </svg>
-              <span class="visually-hidden">Youtube.</span>
-            </a>
-          </li>
-        </ul>
-        </div>
+            </svg>
+            <span class="visually-hidden">Vkontakte.</span>
+          </a>
+        </li>
+        <li class="socials-list__item">
+          <a class="socials-list__link" href="https://t.me/htmlacademy">
+            <svg class="socials-list__svg" aria-hidden="true" focusable="false" width="22" height="18" viewBox="0 0 22 18"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M21.4393 1.62225L18.2705 16.566C18.0313 17.6205 17.408 17.883 16.5223 17.3865L11.6938 13.8285L9.36425 16.0695C9.10626 16.3275 8.891 16.5428 8.39375 16.5428L8.741 11.6258L17.6893 3.54C18.0785 3.1935 17.6045 3.00075 17.0848 3.348L6.02225 10.314L1.25976 8.823C0.224006 8.49975 0.205256 7.78725 1.47576 7.29L20.1035 0.113253C20.966 -0.209997 21.7205 0.305253 21.4393 1.623V1.62225Z"
+                fill="currentColor" />
+            </svg>
+            <span class="visually-hidden">Telegram.</span>
+          </a>
+        </li>
+        <li class="socials-list__item">
+          <a class="socials-list__link" href="https://www.youtube.com/user/htmlacademyru">
+            <svg  class="socials-list__svg"aria-hidden="true" focusable="false" width="24" height="24" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M19.1813 5H4.81331C3.30618 5 2 6.3 2 7.8V16.1C2 17.7 3.30618 19 4.81331 19H19.1813C20.7889 19 21.9946 17.7 21.9946 16.2V7.8C22.095 6.3 20.7889 5 19.1813 5ZM9.03326 15.4V8.6L15.8656 12L9.03326 15.4Z"
+                fill="currentColor" />
+            </svg>
+            <span class="visually-hidden">Youtube.</span>
+          </a>
+        </li>
+      </ul>
+      </div>
       <div class="page-footer__developer htmlacademy">
-        <span class="htmlacademy__text">Разработано</span>
+        <p class="htmlacademy__text">Разработано</p>
         <a class="htmlacademy__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg aria-hidden="true" focusable="false" width="27" height="35" viewBox="0 0 27 35"
             xmlns="http://www.w3.org/2000/svg">
@@ -169,6 +172,7 @@
           </svg>
         </a>
       </div>
+    </div>
   </footer>
 </body>
 
