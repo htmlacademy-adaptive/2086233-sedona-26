@@ -55,15 +55,15 @@
           <legend class="user-data__title">Представьтесь&#58;</legend>
           <ul class="user-data__list">
             <li class="user-data__item">
-              <label class="user-data__label" for="first-name">ИМЯ*:</label>
+              <label class="user-data__label" for="first-name">Имя*:</label>
               <input class="user-data__input" type="text" name="first-name" id="first-name" value="Пётр" required>
             </li>
             <li class="user-data__item">
-              <label class="user-data__label" for="second-name">ФАМИЛИЯ*:</label>
+              <label class="user-data__label" for="second-name">Фамилия*:</label>
               <input class="user-data__input" type="text" name="second-name" id="second-name" value="Пустота" required>
             </li>
             <li class="user-data__item">
-              <label class="user-data__label" for="patronymic">ОТЧЕСТВО:</label>
+              <label class="user-data__label" for="patronymic">Отчество:</label>
               <input class="user-data__input" type="text" name="patronymic" id="patronymic" value="Викторович">
             </li>
           </ul>
@@ -85,16 +85,16 @@
         </fieldset>
         <fieldset class="form-review__impression user-data">
           <legend class="user-data__title">Ваше Общее впечатление:</legend>
-          <ul class="user-data__list experience">
-            <li class="user-data__item">
+          <ul class="user-data__list">
+            <li class="user-data__item user-experience">
               <label class="user-experience__mark" for="good-experience">Скорее положительное</label>
               <input class="user-experience__input" type="radio" name="good-experience" id="good-experience" checked>
             </li>
-            <li class="user-data__item">
+            <li class="user-data__item user-experience">
               <label class="user-experience__mark" for="bad-experience">Скорее отрицательное</label>
               <input class="user-experience__input" type="radio" name="bad-experience" id="bad-experience">
             </li>
-            <li class="user-data__item">
+            <li class="user-data__item user-experience">
               <label class="user-experience__mark" for="doubtful-experience">Затрудняюсь ответить</label>
               <input class="user-experience__input" type="radio" name="doubtful-experience" id="doubtful-experience">
             </li>
@@ -103,19 +103,19 @@
         <fieldset class="form-review__sights user-data">
           <legend class="user-data__title">Посещенные достопримечательности:</legend>
           <ul class="user-data__list place">
-            <li class="user-data__item">
+            <li class="user-data__item visited-places">
               <label class="visited-places__control" for="devil-bridge">Мост Дьявола</label>
               <input class="visited-places__input" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
             </li>
-            <li class="user-data__item">
+            <li class="user-data__item visited-places">
               <label class="visited-places__control" for="bell-mountain">Гора-Колокол</label>
               <input class="visited-places__input" type="checkbox" name="bell-mountain" id="bell-mountain" checked>
             </li>
-            <li class="user-data__item">
+            <li class="user-data__item visited-places">
               <label class="visited-places__control" for="slide-park">Слайд-парк</label>
               <input class="visited-places__input" type="checkbox" name="slide-park" id="slide-park" checked>
             </li>
-            <li class="user-data__item">
+            <li class="user-data__item visited-places">
               <label class="visited-places__control" for="red-rocks">Красные скалы</label>
               <input class="visited-places__input" type="checkbox" name="red-rocks" id="red-rocks">
             </li>
@@ -126,7 +126,7 @@
           <textarea class="user-data__text emotions-text" rows="4" cols="20" name="emotions"
             placeholder="Опишите подробно все свои восторги"></textarea>
         </div>
-        <buton class="button submit-button" type="submit">ОТПРАВИТЬ ОТЗЫВ</buton>
+        <buton class="button submit-button" type="submit">Отправить отзыв</buton>
         <span class="required-fields">* — обязательные поля</span>
       </form>
     </section>
@@ -136,7 +136,7 @@
     <object class="page-footer__map" src="#"></object>
     <div class="page-footer__contacts socials ">
       <h2 class="socials__reference">&#35;visitSEDONA</h2>
-      <div class="socials__list">
+      <div class="socials__listing">
       <span class="visually-hidden">Мы в социальных сетях.</span>
       <ul class="socials-list">
         <li class="socials-list__item">
