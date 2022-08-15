@@ -3,12 +3,22 @@
   display: block;
   background-image: url("../../../images/back-form-catalog.jpg");
   background-repeat: no-repeat;
+  background-position: center;
   object-fit: cover;
 }
 
-.sedona-sight__divider {
+.sedona-sight::after {
+  content: "";
+  background-image: url("../../../images/divider-catalog.jpg");
+  background-repeat: no-repeat;
   margin: 0 auto;
   display: block;
   object-fit: cover;
   background-position: center;
+}
+
+.sedona-sight__name {
+  margin: 0 auto;
+  display: block;
+  height: 158px;
 }
