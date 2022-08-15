@@ -4,4 +4,15 @@
 
 .content__promo {
   border-bottom: 1px solid #e5e5e5;
+  margin: 33px auto 20px;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+    margin: 62px auto 38px;
+    max-width: 430px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 100px auto 40px;
+  }
 }
