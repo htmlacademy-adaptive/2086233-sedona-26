@@ -1,7 +1,20 @@
 .photo-card {
-  padding: 24px 26px;
+  padding: 24px 20px;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 324px;
+    padding: 0;
+  }
 }
 
+.photo-card--1 {
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    padding: 0;
+    flex-grow: 1;
+  }
+}
 
 .photo-card__link {
   display: block;
@@ -11,6 +24,10 @@
 
 .photo-card__photo {
   margin-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 .photo-card__title {
@@ -36,4 +53,16 @@
 
 .photo-card__counter {
   margin-right: auto;
+}
+
+.photo-card__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    padding: 22px 27px 15px 20px;
+  }
 }

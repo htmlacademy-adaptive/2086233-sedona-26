@@ -3,10 +3,23 @@
 }
 
 .user-review__ask {
-  padding-bottom: 28px;
+  padding: 36px 20px 28px;
   border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+    padding: 64px 165px 102px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 115px 382px 67px;
+  }
 }
 
 .user-review__form {
   margin: 24px 0 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 60px 64px;
+  }
 }
