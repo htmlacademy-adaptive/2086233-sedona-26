@@ -1,6 +1,6 @@
 .inner-promo {
-  margin: 0 auto 17px;
-  padding: 0 20px 26px;
+  padding: 0 20px 25px;
+  text-align: center;
 }
 
 .inner-promo__title {
@@ -8,9 +8,13 @@
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  text-align: center;
   text-transform: uppercase;
   padding-bottom: 26px;
+  margin: 0;
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .inner-promo__text {
@@ -18,14 +22,6 @@
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  text-align: center;
   text-transform: uppercase;
 }
 
-.inner-promo-wrapper {
-  margin: 17px auto 38px;
-}
-
-.inner-promo__presentation {
-  margin: 0 auto;
-}

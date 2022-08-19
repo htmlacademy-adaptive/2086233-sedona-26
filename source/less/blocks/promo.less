@@ -7,7 +7,12 @@
   background-repeat: no-repeat;
   object-fit: cover;
   display: block;
+  background-position: center;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../../../images/back-index--tablet-desktop.jpg");
+  }
 }
 
 .promo__slogan-image {
@@ -17,7 +22,31 @@
 }
 
 .promo__need-visit {
-  margin: 32px 20px 16px 18px;
+  padding: 32px 20px 16px 18px;
+
+  @media (min-width: @tablet-width) {
+    padding: 48px 20px 16px 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 59px 20px 16px 18px;
+  }
+}
+
+.promo__need-visit::before {
+  content: "";
+  background-image: url("../../../images/divider-catalog.svg");
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+.promo__need-visit::after {
+  content: "";
+  background-image: url("../../../images/promo-bottom-divider-mobile.svg");
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
 }
 
 .promo__title {
@@ -30,6 +59,10 @@
   margin: 0 auto;
   margin-bottom: 35px;
   max-width: 95%;
+
+  @media (min-width: @tablet-width) {
+    max-width: 520px;
+  }
 }
 
 .promo__text {
@@ -41,14 +74,3 @@
   text-transform: uppercase;
 }
 
-.promo__top-divider {
-  display: block;
-  margin: 0 auto;
-  object-fit: cover;
-}
-
-.promo__bottom-divider {
-  display: block;
-  margin: 0 auto;
-  object-fit: cover;
-}

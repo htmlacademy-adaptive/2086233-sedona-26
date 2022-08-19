@@ -1,27 +1,69 @@
 .advantages-list {
   padding: 0;
+  list-style-type: none;
   display: flex;
   flex-direction: column;
-  list-style-type: none;
   background-color: #eeeeee;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .advantages-list__item {
-  margin: 0;
+  margin: 0 auto;
 }
 
 .advantages-list__wrapper1 {
   margin: 0 auto;
-  padding: 33px 18px 35px;
+  box-sizing: border-box;
   background-color: #81b3d2;
   color: #ffffff;
+
+  &--town {
+    padding: 33px 18px 40px;
+
+    @media (min-width: @tablet-width) {
+      padding: 40px 32px 43px;
+    }
+  }
+
+  &--devil {
+    padding: 40px 18px 35px;
+
+    @media (min-width: @tablet-width) {
+      padding: 43px 36px 40px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    height: auto;
+    min-width: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: auto;
+    min-width: 400px;
+  }
 }
 
 .advantages-list__wrapper2 {
   margin: 0 auto;
+  box-sizing: border-box;
   padding-top: 24px;
   background-color: #eeeeee;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    height: auto;
+    max-width: 175px;
+    padding: 41px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 292px;
+  }
 }
 
 .advantages-list__features {
@@ -49,7 +91,7 @@
   letter-spacing: 1px;
   margin: 0 22px 17px 16px;
 
-  &--thin-font {
+  &--small-beauty {
     font-weight: 400;
   }
 }
@@ -62,12 +104,42 @@
   text-align: center;
   text-transform: uppercase;
 
-  &--thin-font {
+  &--small-beauty {
     font-weight: 400;
   }
 
   &--bordered {
     padding-bottom: 24px;
     border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+
+    @media (min-width: @tablet-width) {
+      border-bottom: none;
+    }
+  }
+}
+
+.advantages-list__town-sight {
+  display: block;
+  object-fit: cover;
+  background-color: #82b3d3;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+}
+
+.advantages-list__bridge-image {
+  display: block;
+  object-fit: cover;
+  background-color: #82b3d3;
+
+  @media (min-width: @tablet-width) {
+    order: -1;
+    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    object-fit: cover;
+    width: 100%;
   }
 }

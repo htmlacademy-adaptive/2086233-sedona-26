@@ -1,28 +1,112 @@
 
 .form-review__name {
+  margin: 0;
   padding: 0 20px 39px;
   border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+    grid-area: name;
+    margin: 0 auto;
+    padding: 0 43px 0 0;
+  }
+}
+
+.form-review__person {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "name contact";
+  }
 }
 
 .form-review__contact {
-  margin-top: 24px;
+  margin: 24px 0 0 0;
   padding: 0 20px 35px;
+  display: flex;
+  flex-wrap: wrap;
   border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+    grid-area: contact;
+    margin: 0 auto;
+    padding: 0 0 0 26px;
+  }
 }
 
 .form-review__impression {
-  margin-top: 24px;
+  margin: 24px auto 0 auto;
+  display: block;
   padding: 0 20px 24px;
   border-bottom: 1px solid #e5e5e5;
+
+
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+    margin: 48px auto 0 auto;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 56px auto 0 auto;
+  }
+}
+
+.form-review__impression-list {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 280px;
+  list-style-type: none;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 575px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1000px;
+    padding: 17px 53px;
+  }
 }
 
 .form-review__sights {
-  margin-top: 24px;
+  margin: 24px 0 0 0;
   padding: 0 20px 24px;
+  display: flex;
+  flex-wrap: wrap;
   border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+    margin: 48px auto 0 auto;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 56px auto 0 auto;
+  }
 }
 
 .form-review__emotions {
-  margin-top: 24px;
-  padding: 0 20px 24px;
+  margin: 24px auto 0 auto;
+  display: block;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 42px auto 64px auto;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 56px auto 64px auto;
+  }
 }

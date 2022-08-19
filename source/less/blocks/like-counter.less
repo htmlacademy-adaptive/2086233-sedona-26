@@ -1,13 +1,23 @@
 .like-counter {
   display: flex;
   align-items: baseline;
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+  }
 }
 
 .like-counter__button {
   padding: 6px;
-  margin-right: 8px;
+  margin-right: 3px;
   border: none;
   background-color: inherit;
+  opacity: 0.3;
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+    opacity: 1;
+  }
 }
 
 .like-counter__quantity {
@@ -16,4 +26,8 @@
   line-height: 21px;
   font-weight: 700;
   color: #000000;
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+  }
 }

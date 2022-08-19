@@ -1,14 +1,28 @@
+.socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+}
+
 .socials__listing {
   margin: 0 auto;
 }
 
 .socials__reference {
   margin: 0;
-  padding: 0 77px 33px;
+  padding: 0 55px 33px;
   font-family: "PT Sans", sans-serif;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: @desktop-width) {
+    padding: 0 110px 33px;
+  }
 }
