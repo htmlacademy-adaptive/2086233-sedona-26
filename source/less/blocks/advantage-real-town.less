@@ -4,4 +4,19 @@
     display: flex;
     min-width: 100%;
   }
+
+  &::before {
+    content: "";
+    background-color: #ffffff;
+    display: block;
+    margin: 0 0 -37px 0;
+    padding: 0;
+    width: minmax(320px, 100%);
+    height: 37px;
+    clip-path: polygon(50% 70%, 0 0, 100% 0);
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
 }

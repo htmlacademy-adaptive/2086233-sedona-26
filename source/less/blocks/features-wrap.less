@@ -1,11 +1,24 @@
 .features-wrap {
   position: relative;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    min-width: 33%;
+  }
 }
 
 .features-wrap__icon {
   position: absolute;
   left: 0;
   top: 0;
+
+  @media (min-width: @tablet-width) {
+    position: static;
+    display: block;
+    margin: 0 auto 26px;
+  }
 }
 
 .features-wrap__title {
@@ -30,6 +43,10 @@
   &--3 {
     margin-left: 62px;
   }
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto 22px;
+  }
 }
 
 .features-wrap__description {
@@ -41,15 +58,39 @@
   text-align: left;
   text-transform: uppercase;
 
+  @media (min-width: @tablet-width) {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 190px;
+  }
+
   &--1 {
-    margin-left: 65px;
+    @media (max-width: @mobile-width-only) {
+      margin-left: 65px;
+    }
+
+    @media (min-width: @desktop-width) {
+      max-width: 300px;
+    }
   }
 
   &--2 {
-    margin-left: 70px;
+    @media (max-width: @mobile-width-only) {
+      margin-left: 70px;
+    }
+
+    @media (min-width: @desktop-width) {
+      max-width: 320px;
+    }
   }
 
   &--3 {
-    margin-left: 62px;
+    @media (max-width: @mobile-width-only) {
+      margin-left: 62px;
+    }
+
+    @media (min-width: @desktop-width) {
+      max-width: 300px;
+    }
   }
 }

@@ -8,16 +8,15 @@
   }
 }
 
-.photo-card--1 {
+.photo-card--big {
   @media (min-width: @tablet-width) {
-    min-width: 648px;
-    padding: 0;
     flex-grow: 1;
+    width: 100%;
+    min-width: 648px;
   }
 
   @media (min-width: @desktop-width) {
     min-width: 100%;
-    flex-grow: 1;
   }
 }
 
@@ -56,8 +55,9 @@
   color: #000000;
   text-align: left;
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     margin: 0;
+    padding: 0;
     color: #ffffff;
   }
 
@@ -67,12 +67,15 @@
 }
 
 .photo-card__counter {
-  margin-left: auto;
+  @media (min-width: @tablet-width) {
+    margin-left: auto;
+  }
 }
 
 .photo-card__wrapper {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;

@@ -19,7 +19,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding-bottom: 28px;
+    padding: 0 0 28px 0;
   }
 }
 
@@ -27,6 +27,10 @@
   list-style-type: none;
   padding: 0;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 .user-data__item {
@@ -61,6 +65,13 @@
   color: rgba(0, 0, 0, 0.3);
   min-width: 280px;
   box-sizing: border-box;
+
+  @media (min-width: @desktop-width) {
+    &--small {
+      max-width: 402px;
+    }
+    width: 430px;
+  }
 }
 
 .user-data__text {
@@ -73,6 +84,7 @@
   font-weight: 700;
   text-align: left;
   color: rgba(0, 0, 0, 0.3);
+  resize: none;
   min-width: 280px;
   min-height: 150px;
   box-sizing: border-box;
@@ -104,5 +116,41 @@
 
   @media (min-width: @desktop-width) {
     max-width: 768px;
+  }
+}
+
+.user-data__input-phone {
+  position: relative;
+
+  &::before {
+    content: "";
+    background-color: #e6e6e6;
+    width: 58px;
+    height: 58px;
+    background-image: url("../../images/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #000000;
+    position: absolute;
+    top: 0;
+    left: 86%;
+  }
+}
+
+.user-data__input-letter {
+  position: relative;
+
+  &::before {
+    content: "";
+    background-color: #e6e6e6;
+    width: 58px;
+    height: 58px;
+    background-image: url("../../images/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #000000;
+    position: absolute;
+    top: 0;
+    left: 86%;
   }
 }

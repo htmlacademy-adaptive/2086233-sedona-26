@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html  class="page" lang="ru">
 
 <head>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
@@ -13,16 +13,8 @@
       <a class="navigation__logo" href="index.html">
         <img class="navigation__link" src="../images/logo.svg" alt="Лого Седоны" height="96" width="185">
       </a>
-      <button class="button-menu" type="button">
-        <span class="visually-hidden">Открыть меню.</span>
-        <svg aria-hidden="true" focusable="false" width="23" height="22" viewBox="0 0 23 22" fill="currentColor"
-          xmlns="http://www.w3.org/2000/svg">
-          <path d="M22.9 0H0V4H22.9V0Z" />
-          <path d="M22.9 9H0V13H22.9V9Z" />
-          <path d="M22.9 18H0V22H22.9V18Z" />
-        </svg>
-      </button>
-      <ul class="navigation__list menu">
+      <div class="navigation__list-wrapper navigation__list-wrapper--closed">
+        <ul class="navigation__list menu">
         <li class="menu__item">
           <a class="menu__link" href="index.html">Главная</a>
         </li>
@@ -35,9 +27,19 @@
         <li class="menu__item">
           <a class="menu__link" href="http://htmlacademy.ru">HTML Academy</a>
         </li>
-      </ul>
-    </nav>
-  </header>
+        </ul>
+        <button class="menu__toggle" type="button">
+          <span class="visually-hidden">Открыть меню.</span>
+          <svg class="menu__burger" aria-hidden="true" focusable="false" width="23" height="22" viewBox="0 0 23 22" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M22.9 0H0V4H22.9V0Z" />
+            <path d="M22.9 9H0V13H22.9V9Z" />
+            <path d="M22.9 18H0V22H22.9V18Z" />
+          </svg>
+        </button>
+        </div>
+      </nav>
+    </header>
   <main>
     <div class="sedona-sight">
       <img class="sedona-sight__name" src="../images/sedona.svg" alt="Sedona" width="229" height="39">
@@ -73,13 +75,13 @@
           <ul class="user-data__list contact-list">
             <li class="contact-list__item">
               <label class="user-data__label" for="telephone">Контактный телефон*:</label>
-              <input class="user-data__input" type="text" name="telephone" id="telephone" placeholder="Введите телефон"
-                required>
+              <div class="user-data__input-phone"><input class="user-data__input user-data__input--small" type="text" name="telephone" id="telephone" placeholder="Введите телефон"
+                required></div>
             </li>
             <li class="contact-list__item">
               <label class="user-data__label" for="user-mail">Электронная почта*:</label>
-              <input class="user-data__input" type="e-mail" name="user-mail" id="user-mail" placeholder="Введите e-mail"
-                required>
+              <div class="user-data__input-letter"><input class="user-data__input user-data__input--small" type="e-mail" name="user-mail" id="user-mail" placeholder="Введите e-mail"
+                required></div>
             </li>
           </ul>
         </fieldset>
@@ -136,7 +138,6 @@
   </main>
 
   <footer class="page-footer">
-    <object class="page-footer__map" src="#"></object>
     <div class="page-footer__contacts socials ">
       <h2 class="socials__reference">&#35;visitSEDONA</h2>
       <div class="socials__listing">
@@ -191,6 +192,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

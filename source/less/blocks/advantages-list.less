@@ -20,9 +20,10 @@
   box-sizing: border-box;
   background-color: #81b3d2;
   color: #ffffff;
+  width: 100%;
 
   &--town {
-    padding: 33px 18px 40px;
+    padding: 60px 22px 40px 16px;
 
     @media (min-width: @tablet-width) {
       padding: 40px 32px 43px;
@@ -30,7 +31,7 @@
   }
 
   &--devil {
-    padding: 40px 18px 35px;
+    padding: 39px 16px 35px 15px;
 
     @media (min-width: @tablet-width) {
       padding: 43px 36px 40px;
@@ -39,17 +40,18 @@
 
   @media (min-width: @tablet-width) {
     height: auto;
-    min-width: 256px;
+    max-width: 256px;
   }
 
   @media (min-width: @desktop-width) {
     height: auto;
-    min-width: 400px;
+    max-width: 400px;
   }
 }
 
 .advantages-list__wrapper2 {
   margin: 0 auto;
+  width: 100%;
   box-sizing: border-box;
   padding-top: 24px;
   background-color: #eeeeee;
@@ -135,11 +137,6 @@
 
   @media (min-width: @tablet-width) {
     order: -1;
-    width: 100%;
-  }
-
-  @media (min-width: @desktop-width) {
-    object-fit: cover;
     width: 100%;
   }
 }
