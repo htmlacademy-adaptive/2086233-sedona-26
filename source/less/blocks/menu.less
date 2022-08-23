@@ -10,16 +10,18 @@
   font-size: 18px;
   line-height: 26px;
   padding: 0;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     background-color: #ffffff;
     color: #000000;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: stretch;
     padding: 0;
     font-weight: 700;
     font-size: 14px;
     line-height: 21px;
+    min-height: 56px;
   }
 }
 
@@ -30,6 +32,19 @@
 
   @media (min-width: @tablet-width) {
     box-shadow: none;
+    max-width: 153px;
+
+    &--break {
+      margin-right: 170px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 240px;
+
+    &--break {
+      margin-right: 324px;
+    }
   }
 }
 
@@ -47,14 +62,14 @@
 
 .menu__link {
   display: block;
-  padding: 17px 0 12px;
+  padding: 17px 24px 12px;
   text-decoration: none;
   color: inherit;
   background-color: inherit;
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
-    padding: 18px 0 17px;
+    padding: 18px 24px 17px;
 
     &--current {
       color: #766357;
@@ -66,7 +81,8 @@
   color: #81b3d2;
   background-color: #ffffff;
   border: none;
-  margin: 0 20px 17px auto;
+  margin: 17px 20px 17px auto;
+  padding: 0;
   position: absolute;
   top: 0;
   right: 0;

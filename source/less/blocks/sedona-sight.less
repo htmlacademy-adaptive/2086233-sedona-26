@@ -5,20 +5,51 @@
   background-repeat: no-repeat;
   background-position: center;
   object-fit: cover;
+  position: relative;
+  height: 158px;
+
+  @media (min-width: @tablet-width) {
+    height: 290px;
+  }
 }
 
 .sedona-sight::after {
   content: "";
-  background-image: url("../../../images/divider-catalog.jpg");
-  background-repeat: no-repeat;
-  margin: 0 auto;
+  background-image: url("../../../images/divider-catalog.svg");
   display: block;
+  margin: 0 auto;
   object-fit: cover;
+  width: 100%;
+  height: 57px;
   background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  position: absolute;
+  top: 64%;
+  left: 0;
+
+  @media (min-width: @tablet-width) {
+    background-size: 768px 57px;
+    top: 81%;
+    left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-size: 1200px 57px;
+  }
 }
 
 .sedona-sight__name {
   margin: 0 auto;
+  background-position: center;
   display: block;
-  height: 158px;
+  padding-top: 52px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 95px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 101px;
+  }
 }
