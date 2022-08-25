@@ -8,18 +8,27 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
-    padding: 60px 30px 59px;
+    padding: 60px 31px 59px 36px;
+    box-sizing: border-box;
+    min-width: 768px;
+    justify-content: space-between;
+    align-items: center;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 60px 52px 80px;
+    padding: 60px 52px 79px;
+    min-width: 1200px;
   }
 }
 
 .features-list__item:not(:last-child) {
   margin-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .features-list__item {
-  text-align: center;
+  margin: 0;
 }

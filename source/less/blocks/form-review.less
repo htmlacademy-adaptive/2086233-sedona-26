@@ -5,20 +5,48 @@
   border-bottom: 1px solid #e5e5e5;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     border-bottom: none;
     grid-area: name;
     margin: 0 auto;
     padding: 0 43px 0 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: #dbdbdb;
+      height: 1px;
+      width: 338px;
+      transform: rotate(90deg);
+      top: 42%;
+      left: 48%;
+
+      @media (min-width: @desktop-width) {
+        top: 42%;
+        left: 66%;
+      }
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 63px 0 0;
   }
 }
 
 .form-review__person {
   @media (min-width: @tablet-width) {
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    box-sizing: border-box;
+    max-width: 768px;
+    grid-template-columns: 50% 50%;
     grid-template-areas: "name contact";
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1200px;
   }
 }
 
@@ -35,19 +63,54 @@
     margin: 0 auto;
     padding: 0 0 0 26px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
 }
 
 .form-review__impression {
   margin: 24px auto 0 auto;
-  display: block;
   padding: 0 20px 24px;
+  box-sizing: border-box;
   border-bottom: 1px solid #e5e5e5;
-
+  position: relative;
 
   @media (min-width: @tablet-width) {
     border-bottom: none;
     margin: 48px auto 0 auto;
     padding: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #dbdbdb;
+      height: 1px;
+      width: 123px;
+      top: -40%;
+      left: 0;
+
+      @media (min-width: @desktop-width) {
+        width: 280px;
+        top: -33%;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: #dbdbdb;
+      height: 1px;
+      width: 123px;
+      top: -40%;
+      left: 525px;
+
+      @media (min-width: @desktop-width) {
+        width: 280px;
+        top: -33%;
+        left: 680px;
+      }
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -58,7 +121,6 @@
 .form-review__impression-list {
   margin: 0 auto;
   padding: 0;
-  max-width: 280px;
   list-style-type: none;
   box-sizing: border-box;
   display: flex;
@@ -66,29 +128,62 @@
   flex-wrap: wrap;
 
   @media (min-width: @tablet-width) {
-    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    max-width: 575px;
+    margin: 0 36px;
+    min-width: 575px;
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 1000px;
+    margin: 0;
     padding: 17px 53px;
+    min-width: 986px;
   }
 }
 
 .form-review__sights {
   margin: 24px 0 0 0;
   padding: 0 20px 24px;
+  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   border-bottom: 1px solid #e5e5e5;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     border-bottom: none;
     margin: 48px auto 0 auto;
     padding: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #dbdbdb;
+      height: 1px;
+      width: 123px;
+      top: -40%;
+      left: 0;
+
+      @media (min-width: @desktop-width) {
+        width: 280px;
+        top: -33%;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: #dbdbdb;
+      height: 1px;
+      width: 123px;
+      top: -40%;
+      left: 525px;
+
+      @media (min-width: @desktop-width) {
+        width: 280px;
+        top: -33%;
+        left: 680px;
+      }
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -100,10 +195,40 @@
   margin: 24px auto 0 auto;
   display: block;
   padding: 0 20px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     margin: 42px auto 64px auto;
     padding: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #dbdbdb;
+      height: 1px;
+      width: 123px;
+      top: 12px;
+      left: 0;
+
+      @media (min-width: @desktop-width) {
+        width: 280px;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: #dbdbdb;
+      height: 1px;
+      width: 123px;
+      top: 12px;
+      left: 525px;
+
+      @media (min-width: @desktop-width) {
+        width: 280px;
+        left: 680px;
+      }
+    }
   }
 
   @media (min-width: @desktop-width) {

@@ -10,6 +10,16 @@
   line-height: 26px;
   background-color: #ffffff;
   color: #000000;
-  box-shadow: 0 4px 4px #000000;
+
+  @media (min-width: @tablet-width) {
+    min-width: 768px;
+    max-width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1200px;
+    box-shadow: 0 4px 4px #000000;
+    margin: 0 auto;
+  }
 }
 

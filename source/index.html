@@ -1,50 +1,51 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
+  <link rel="icon" href="favicon-32.ico">
+  <link rel="icon" href="images/favicons/icon-svg.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/favicons/apple-icon-180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
   <header class="main-header">
     <nav class="main-header__navigation navigation">
-      <a class="navigation__logo" href="index.html">
+      <a class="navigation__logo" href="#">
         <img class="link-logo" src="../images/logo.svg" alt="Лого Седоны" height="96" width="185">
       </a>
+      <div class="navigation__list-wrapper navigation__list-wrapper--opened navigation__list-wrapper--nojs">
       <ul class="navigation__list menu">
         <li class="menu__item">
-          <a class="menu__link menu__link--current" href="#">Главная</a>
+          <a class="menu__link menu__link--main menu__link--current" href="#">Главная</a>
+        </li>
+        <li class="menu__item menu__item--break">
+          <a class="menu__link menu__link--catalog" href="catalog.html">Фото и видео</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="catalog.html">Фото и видео</a>
+          <a class="menu__link menu__link--form" href="form.html">Форма отзыва</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="form.html">Форма отзыва</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="http://htmlacademy.ru">HTML Academy</a>
+          <a class="menu__link menu__link--academy" href="http://htmlacademy.ru">HTML Academy</a>
         </li>
       </ul>
-      <button class="button-menu" type="button">
+      <button class="menu__toggle" type="button">
         <span class="visually-hidden">Открыть меню.</span>
-        <svg aria-hidden="true" focusable="false" width="23" height="22" viewBox="0 0 23 22" fill="currentColor"
+        <svg class="menu__burger" aria-hidden="true" focusable="false" width="23" height="22" viewBox="0 0 23 22" fill="currentColor"
           xmlns="http://www.w3.org/2000/svg">
           <path d="M22.9 0H0V4H22.9V0Z" />
           <path d="M22.9 9H0V13H22.9V9Z" />
           <path d="M22.9 18H0V22H22.9V18Z" />
         </svg>
       </button>
-      <button class="button-close" type="button">
+      <button class="menu__close" type="button">
         <span class="visually-hidden">Закрыть меню.</span>
-        <svg aria-hidden="true" focusable="false" width="23" height="23" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z"
-            fill="currentColor" />
-        </svg>
+        <svg class="close-cross" aria-hidden="true" focusable="false" width="23" height="23" xmlns="http://www.w3.org/2000/svg"><path d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z" fill="currentColor"/></svg>
       </button>
-
+      </div>
     </nav>
   </header>
   <main>
@@ -129,7 +130,7 @@
     </section>
   </main>
   <footer class="page-footer">
-    <object class="page-footer__map" src="#"></object>
+    <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d702759.2288644249!2d-111.85680689912354!3d35.09283089773499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da300cd6a52d3%3A0xd0b62ffa7e756ca6!2sSedona!5e0!3m2!1sru!2sru!4v1660904434362!5m2!1sru!2sru" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <div class="page-footer__contacts socials ">
       <h2 class="socials__reference">&#35;visitSEDONA</h2>
       <div class="socials__listing">
@@ -184,6 +185,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
