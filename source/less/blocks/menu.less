@@ -35,7 +35,7 @@
     max-width: 153px;
 
     &--break {
-      margin-right: 170px;
+      margin-right: 155px;
     }
   }
 
@@ -43,7 +43,7 @@
     max-width: 240px;
 
     &--break {
-      margin-right: 324px;
+      margin-right: 239px;
     }
   }
 }
@@ -69,11 +69,65 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
-    padding: 18px 24px 17px;
+    padding: 18px 20px 17px;
 
     &--current {
       color: #766357;
     }
+  }
+}
+
+.menu__link--main {
+  @media (min-width: @tablet-width) {
+    margin: 0 27px 0 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 71px 0 71px;
+  }
+}
+
+.menu__link--catalog {
+  @media (min-width: @tablet-width) {
+    margin: 0 7px 0 8px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 51px 0 51px;
+  }
+}
+
+.menu__link--form {
+  @media (min-width: @tablet-width) {
+    margin: 0 4px 0 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 48px 0 48px;
+  }
+}
+
+.menu__link--academy {
+  @media (min-width: @tablet-width) {
+    margin: 0 7px 0 8px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 51px 0 51px;
+  }
+}
+
+.menu__link:hover,
+.menu__link:active + .menu__item {
+  @media (max-width: @mobile-width-only) {
+    background-color: #669ec0;
+  }
+}
+
+.menu__link:disabled + .menu__item {
+  @media (max-width: @mobile-width-only) {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.7);
   }
 }
 
@@ -102,16 +156,31 @@
   }
 }
 
-.menu__link:hover,
-.menu__link:active + .menu__item {
-  @media (max-width: @mobile-width-only) {
+.menu__close {
+  color: #ffffff;
+  background-color: #81b3d2;
+  border: none;
+  margin: 17px 20px 17px auto;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.6;
     background-color: #669ec0;
   }
-}
 
-.menu__link:disabled + .menu__item {
-  @media (max-width: @mobile-width-only) {
-    background-color: #5496bd;
-    color: rgba(255, 255, 255, 0.7);
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }

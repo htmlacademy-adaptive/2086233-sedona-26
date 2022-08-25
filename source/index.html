@@ -17,19 +17,19 @@
       <a class="navigation__logo" href="#">
         <img class="link-logo" src="../images/logo.svg" alt="Лого Седоны" height="96" width="185">
       </a>
-      <div class="navigation__list-wrapper navigation__list-wrapper--closed">
+      <div class="navigation__list-wrapper navigation__list-wrapper--opened navigation__list-wrapper--nojs">
       <ul class="navigation__list menu">
         <li class="menu__item">
-          <a class="menu__link menu__link--current" href="#">Главная</a>
+          <a class="menu__link menu__link--main menu__link--current" href="#">Главная</a>
         </li>
         <li class="menu__item menu__item--break">
-          <a class="menu__link" href="catalog.html">Фото и видео</a>
+          <a class="menu__link menu__link--catalog" href="catalog.html">Фото и видео</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="form.html">Форма отзыва</a>
+          <a class="menu__link menu__link--form" href="form.html">Форма отзыва</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="http://htmlacademy.ru">HTML Academy</a>
+          <a class="menu__link menu__link--academy" href="http://htmlacademy.ru">HTML Academy</a>
         </li>
       </ul>
       <button class="menu__toggle" type="button">
@@ -40,6 +40,10 @@
           <path d="M22.9 9H0V13H22.9V9Z" />
           <path d="M22.9 18H0V22H22.9V18Z" />
         </svg>
+      </button>
+      <button class="menu__close" type="button">
+        <span class="visually-hidden">Закрыть меню.</span>
+        <svg class="close-cross" aria-hidden="true" focusable="false" width="23" height="23" xmlns="http://www.w3.org/2000/svg"><path d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z" fill="currentColor"/></svg>
       </button>
       </div>
     </nav>
