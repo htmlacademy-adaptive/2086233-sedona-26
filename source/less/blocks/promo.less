@@ -14,6 +14,10 @@
   margin: 0 auto;
   position: relative;
 
+  @media (min-width: @tablet-width) {
+    height: 518px;
+  }
+
   &::after {
     content: "";
     background-image: url("../../../images/divider-catalog.svg");
@@ -31,10 +35,12 @@
 
     @media (min-width: @tablet-width) {
       background-size: 768px 57px;
+      top: 82.2%;
     }
 
     @media (min-width: @desktop-width) {
       background-size: 1200px 57px;
+      top: 82.6%;
     }
   }
 }
@@ -46,7 +52,9 @@
   padding-top: 90px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 77px;
+    padding: 77px;
+    width: 461px;
+    height: auto;
   }
 }
 
