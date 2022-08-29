@@ -14,13 +14,23 @@
   position: relative;
   margin: 0 auto;
   background-color: #ffffff;
+  background-image: url("../../images/video-presentation-mobile.jpg");
+  object-fit: cover;
+  width: 280px;
+  height: 177px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 40px;
+    background-image: url("../../images/video-presentation-tablet.jpg");
+    width: 648px;
+    height: 500px;
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 84px;
+    background-image: url("../../images/video-presentation.jpg");
+    width: 800px;
+    height: 500px;
   }
 }
 
@@ -35,8 +45,9 @@
   border: none;
   padding: 0;
   margin: 0 auto;
-  top: 40%;
-  left: 45%;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%);
   background-image: url("../../images/video-button.svg");
   background-color: rgba(0, 0, 0, 0);
   width: 48px;
