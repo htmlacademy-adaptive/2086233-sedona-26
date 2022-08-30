@@ -14,16 +14,19 @@
   position: relative;
   box-sizing: border-box;
   max-width: 280px;
+  margin-bottom: 16px;
 
-  &:not(:nth-child(2n)) {
-    margin: 0 16px 16px 0;
-
-    @media (min-width: @desktop-width) {
-      margin: 0;
+  @media (min-width: @tablet-width) {
+    &:not(:nth-child(2n)) {
+      margin: 0 16px 16px 0;
     }
   }
 
   @media (min-width: @desktop-width) {
+    &:not(:nth-child(2n)) {
+      margin: 0;
+    }
+
     &:not(:nth-child(3n)) {
       margin: 0 28px 0 0;
     }
