@@ -11,14 +11,17 @@
 
   @media (min-width: @tablet-width) {
     height: 290px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../../images/back-form-catalog@2x.jpg");
-      background-size: 2400px auto;
-      background-position: 44% 50%;
-    }
   }
 }
+
+@media (min-resolution: 2dppx) {
+  .sedona-sight {
+    background-image: url("../../../images/back-form-catalog@2x.jpg");
+    background-size: 2400px auto;
+    background-position: 44% 50%;
+  }
+}
+
 
 .sedona-sight::after {
   content: "";
@@ -37,7 +40,7 @@
 
   @media (min-width: @tablet-width) {
     background-size: 768px 57px;
-    top: 81%;
+    top: 80.8%;
     left: 0;
   }
 
