@@ -23,18 +23,33 @@
   width: 100%;
 
   &--town {
-    padding: 60px 22px 40px 16px;
+    padding: 55px 22px 26px 16px;
 
     @media (min-width: @tablet-width) {
-      padding: 40px 32px 43px;
+      padding: 42px 32px 33px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 45px 69px 20px;
+      margin: 0;
     }
   }
 
   &--devil {
-    padding: 39px 16px 35px 15px;
+    padding: 39px 16px 21px 15px;
+
+    @media (max-width: @mobile-width-only) {
+      br {
+        display: none;
+      }
+    }
 
     @media (min-width: @tablet-width) {
-      padding: 43px 36px 40px;
+      padding: 43px 30px 28px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 50px 83px 28px;
     }
   }
 
@@ -46,6 +61,7 @@
   @media (min-width: @desktop-width) {
     height: auto;
     max-width: 400px;
+    margin: 0;
   }
 }
 
@@ -53,18 +69,31 @@
   margin: 0 auto;
   width: 100%;
   box-sizing: border-box;
-  padding-top: 24px;
+  padding-top: 25px;
   background-color: #eeeeee;
   color: #000000;
 
+  &--road {
+    padding-top: 10px;
+
+    @media (min-width: @tablet-width) {
+      max-width: 140px;
+    }
+  }
+
+  &--tourists {
+    padding-top: 11px;
+    padding-bottom: 15px;
+  }
+
   @media (min-width: @tablet-width) {
     height: auto;
-    max-width: 175px;
-    padding: 41px 0;
+    max-width: 178px;
+    padding: 41px 0 0 0;
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 292px;
+    max-width: 200px;
   }
 }
 
@@ -80,8 +109,20 @@
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  padding: 0 22px 11px 16px;
+  padding: 0 22px 11px 20px;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    padding: 0 22px 13px 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    &--short {
+      max-width: 215px;
+      padding: 0 0 13px 23px;
+    }
+  }
 }
 
 .advantages-list__number {
@@ -95,6 +136,15 @@
 
   &--small-beauty {
     font-weight: 400;
+    margin-left: 22px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 0 22px 22px 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 15px 24px 16px;
   }
 }
 
@@ -108,6 +158,16 @@
 
   &--small-beauty {
     font-weight: 400;
+    margin-left: 32px;
+    max-width: 255px;
+
+    @media (min-width: @tablet-width) {
+      margin-left: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-left: 0;
+    }
   }
 
   &--bordered {
@@ -116,6 +176,7 @@
 
     @media (min-width: @tablet-width) {
       border-bottom: none;
+      padding-bottom: 27px;
     }
   }
 }
@@ -126,7 +187,12 @@
   background-color: #82b3d3;
 
   @media (min-width: @tablet-width) {
-    width: 100%;
+    width: 512px;
+    height: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
   }
 }
 
@@ -137,6 +203,11 @@
 
   @media (min-width: @tablet-width) {
     order: -1;
-    width: 100%;
+    width: 512px;
+    height: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
   }
 }

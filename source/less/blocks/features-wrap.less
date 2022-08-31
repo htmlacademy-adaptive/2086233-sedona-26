@@ -12,12 +12,44 @@
 .features-wrap__icon {
   position: absolute;
   left: 0;
-  top: 0;
+  top: -5px;
 
   @media (min-width: @tablet-width) {
     position: static;
     display: block;
-    margin: 0 auto 26px;
+    margin: 0 auto;
+
+    &--house {
+      width: 75px;
+      height: 72px;
+      margin: 0 53px 25px;
+    }
+
+    &--burger {
+      width: 76px;
+      height: 82px;
+      margin: 0 72px 18px;
+    }
+
+    &--gift {
+      width: 78px;
+      height: 78px;
+      margin: -27px 30px 6px 100px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--house {
+      margin: 0 110px 30px;
+    }
+
+    &--burger {
+      margin: 0 147px 11px;
+    }
+
+    &--gift {
+      margin: -9px 160px 9px 185px;
+    }
   }
 }
 
@@ -33,19 +65,46 @@
   margin-bottom: 16px;
 
   &--1 {
-    margin-left: 65px;
+    margin-left: 48px;
+    margin-top: 7px;
+
+    @media (min-width: @tablet-width) {
+      margin: 0 53px 22px 58px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin: 0 112px 23px;
+    }
   }
 
   &--2 {
-    margin-left: 70px;
+    margin-left: 52px;
+    margin-top: 29px;
+
+    @media (min-width: @tablet-width) {
+      margin: 6px 30px 22px 93px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin: 6px 166px 22px;
+    }
   }
 
   &--3 {
-    margin-left: 62px;
+    margin-left: 44px;
+    margin-top: 30px;
+
+    @media (min-width: @tablet-width) {
+      margin: 19px 30px 22px 83px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin: 19px 168px 22px;
+    }
   }
 
   @media (min-width: @tablet-width) {
-    margin: 0 auto 22px;
+    font-size: 21px;
   }
 }
 
@@ -60,37 +119,73 @@
 
   @media (min-width: @tablet-width) {
     text-align: center;
-    margin: 0 auto;
+    margin: 0;
     max-width: 190px;
   }
 
   &--1 {
     @media (max-width: @mobile-width-only) {
-      margin-left: 65px;
+      margin-left: 48px;
+    }
+
+    @media (max-width: @tablet-width) {
+      margin-left: -2px;
     }
 
     @media (min-width: @desktop-width) {
       max-width: 300px;
+      margin-left: -3px;
     }
   }
 
   &--2 {
     @media (max-width: @mobile-width-only) {
-      margin-left: 70px;
+      margin-left: 52px;
+
+      br {
+        display: none;
+      }
+    }
+
+    @media (min-width: @tablet-width) {
+      margin-left: 18px;
+
+      br {
+        display: block;
+      }
     }
 
     @media (min-width: @desktop-width) {
       max-width: 320px;
+      margin-left: 24px;
     }
   }
 
   &--3 {
     @media (max-width: @mobile-width-only) {
-      margin-left: 62px;
+      margin-left: 45px;
+
+      br {
+        display: none;
+      }
+    }
+
+    @media (min-width: @tablet-width) {
+      margin-left: 38px;
+      max-width: 192px;
+
+      br {
+        display: none;
+      }
     }
 
     @media (min-width: @desktop-width) {
-      max-width: 300px;
+      margin-left: 62px;
+      max-width: 400px;
+
+      br {
+        display: block;
+      }
     }
   }
 }
