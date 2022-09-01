@@ -1,17 +1,18 @@
 .inner-promo {
-  padding: 0 20px 25px;
+  padding: 0 20px 24px;
   text-align: center;
   background-color: #ffffff;
 }
 
 .inner-promo__title {
   font-family: "PT Sans", sans-serif;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
-  padding-bottom: 26px;
+  padding-bottom: 22px;
   margin: 0;
+
   @media (min-width: @tablet-width) {
     font-size: 30px;
     line-height: 26px;
@@ -21,8 +22,12 @@
 .inner-promo__text {
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 1;
   font-weight: 400;
   text-transform: uppercase;
+
+  &--higher {
+    line-height: 1.25;
+  }
 }
 

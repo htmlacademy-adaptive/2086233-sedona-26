@@ -76,8 +76,11 @@
                 <p class="advantages-list__description advantage-description">Седона не аттракцион для туристов, там
                   течёт своя жизнь</p>
               </div>
+              <picture>
+                <source media="(min-width: 1200px)" srcset="../images/town-sight-desktop.jpg 1x, ../images/town-sight-desktop@2x.jpg 2x">
               <img class="advantages-list__town-sight" src="../images/town-sight-advantage-1.jpg" alt="Вид города"
                 width="320" height="260">
+              </picture>
             </div>
             <ul class="advantages-list__features features-list">
               <li class="features-list__item features-wrap">
@@ -118,26 +121,31 @@
                 <p class="advantages-list__description advantage-description">Да, по нему можно пройти&#33; Если вы
                   осмелитесь, конечно</p>
               </div>
-              <img class="advantages-list__bridge-image" src="../images/devil-bridge-advantage-2.jpg" alt="Мост дьявола"
-                width="320" height="260">
+              <div class="advantages-list__bridge-image">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="../images/devil-bridge-desktop.jpg 1x, ../images/devil-bridge-desktop@2x.jpg 2x">
+                  <img class="advantages-list__bridge-image" src="../images/devil-bridge-advantage-2.jpg" alt="Мост дьявола"
+                  width="320" height="260" srcset="../images/devil-bridge-advantage-2@2x.jpg 2x">
+              </picture>
+            </div>
             </div>
           </li>
           <li class="advantages-list__wrapper2">
-            <h3 class="advantages-list__title advantages-list__title">Небольшая площадь</h3>
+            <h3 class="advantages-list__title advantages-list__title--short">Небольшая площадь</h3>
             <p class="advantages-list__number advantages-list__number--small-beauty">&#8211;&#8470;3&#8211;</p>
             <p
               class="advantages-list__description advantages-list__description--small-beauty advantages-list__description--bordered">
               Все интересные места находятся очень близко</p>
           </li>
           <li class="advantages-list__wrapper2 advantages-list__wrapper2--road">
-            <h3 class="advantages-list__title advantage-title advantages-list__title--road">Красивая дорога</h3>
+            <h3 class="advantages-list__title advantage-title advantages-list__title--short">Красивая дорога</h3>
             <p class="advantages-list__number advantages-list__number--small-beauty">&#8211;&#8470;4&#8211;</p>
             <p
               class="advantages-list__description advantages-list__description--small-beauty advantages-list__description--bordered">
               Ехать в Седону из <br>Лас-Вегаса совсем<br> не скучно&#33;</p>
           </li>
           <li class="advantages-list__wrapper2 advantages-list__wrapper2--tourists">
-            <h3 class="advantages-list__title advantage-title">Мало туристов</h3>
+            <h3 class="advantages-list__title advantages-list__title--short">Мало туристов</h3>
             <p class="advantages-list__number advantages-list__number--small-beauty">&#8211;&#8470;5&#8211;</p>
             <p class="advantages-list__description advantages-list__description--small-beauty">Большинство едет в Гранд
               Каньон и толпится там</p>

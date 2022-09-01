@@ -10,10 +10,14 @@
 .like-counter__button {
   padding: 6px;
   padding-left: 0;
-  margin-right: 3px;
+  margin-right: 8px;
   border: none;
   background-color: inherit;
   opacity: 0.3;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 2px;
+  }
 
   @media (min-width: @desktop-width) {
     color: #ffffff;
