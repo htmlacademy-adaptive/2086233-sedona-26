@@ -6,7 +6,7 @@
 
 .user-data__title {
   font-family: "PT Sans", sans-serif;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-align: center;
@@ -20,6 +20,39 @@
 
   @media (min-width: @tablet-width) {
     padding: 0 0 28px 0;
+    font-size: 21px;
+
+    &--name {
+      padding: 0 40px 28px 0;
+      text-align: right;
+    }
+
+    &--contact {
+      padding: 0 20px 28px 0;
+      text-align: right;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 26px 28px 0;
+
+    &--name {
+      padding: 0 105px 28px 0;
+      text-align: right;
+    }
+
+    &--contact {
+      padding: 0 0 28px 10px;
+      text-align: center;
+    }
+
+    &--narrow {
+      padding: 14px 43px 28px 0;
+    }
+
+    &--emotions {
+      padding: 0 0 28px 0;
+    }
   }
 }
 
@@ -49,6 +82,7 @@
   line-height: 21px;
   font-weight: 400;
   text-align: left;
+  margin-left: 16px;
   text-transform: uppercase;
   color: #333333;
 }
@@ -133,10 +167,10 @@
     color: #000000;
     position: absolute;
     top: 0;
-    left: 86%;
+    left: 79%;
 
-    @media (max-width: @mobile-width-only) {
-      left: 79%;
+    @media (min-width: @desktop-width) {
+      left: 86%;
     }
   }
 }
@@ -155,10 +189,10 @@
     color: #000000;
     position: absolute;
     top: 0;
-    left: 86%;
+    left: 79%;
 
-    @media (max-width: @mobile-width-only) {
-      left: 79%;
+    @media (min-width: @desktop-width) {
+      left: 86%;
     }
   }
 }
