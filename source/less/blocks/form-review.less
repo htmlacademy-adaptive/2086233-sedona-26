@@ -71,14 +71,14 @@
 
 .form-review__impression {
   margin: 24px auto 0 auto;
-  padding: 0 20px 24px;
+  padding: 0 20px 8px;
   box-sizing: border-box;
   border-bottom: 1px solid #e5e5e5;
   position: relative;
 
   @media (min-width: @tablet-width) {
     border-bottom: none;
-    margin: 48px auto 0 auto;
+    margin: 64px auto 0 auto;
     padding: 0;
 
     &::before {
@@ -90,9 +90,13 @@
       top: -40%;
       left: 0;
 
+      @media (min-width: @tablet-width) {
+        top: -35%;
+      }
+
       @media (min-width: @desktop-width) {
         width: 280px;
-        top: -33%;
+        top: -50%;
       }
     }
 
@@ -105,16 +109,20 @@
       top: -40%;
       left: 525px;
 
+      @media (min-width: @tablet-width) {
+        top: -35%;
+      }
+
       @media (min-width: @desktop-width) {
         width: 280px;
-        top: -33%;
+        top: -50%;
         left: 680px;
       }
     }
   }
 
   @media (min-width: @desktop-width) {
-    margin: 56px auto 0 auto;
+    margin: 70px auto 0 auto;
   }
 }
 
@@ -152,7 +160,7 @@
 
   @media (min-width: @tablet-width) {
     border-bottom: none;
-    margin: 48px auto 0 auto;
+    margin: 31px auto 0 auto;
     padding: 0;
 
     &::before {
@@ -163,6 +171,10 @@
       width: 123px;
       top: -40%;
       left: 0;
+
+      @media (min-width: @tablet-width) {
+        top: -44%;
+      }
 
       @media (min-width: @desktop-width) {
         width: 280px;
@@ -179,6 +191,10 @@
       top: -40%;
       left: 525px;
 
+      @media (min-width: @tablet-width) {
+        top: -44%;
+      }
+
       @media (min-width: @desktop-width) {
         width: 280px;
         top: -33%;
@@ -188,7 +204,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 56px auto 0 auto;
+    margin: 43px auto 0 auto;
   }
 }
 
@@ -199,7 +215,7 @@
   position: relative;
 
   @media (min-width: @tablet-width) {
-    margin: 42px auto 64px auto;
+    margin: 27px auto 64px auto;
     padding: 0;
 
     &::before {
