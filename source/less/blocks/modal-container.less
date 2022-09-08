@@ -1,0 +1,50 @@
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 3;
+  padding-top: 116px;
+  padding-bottom: 677px;
+
+  &--success {
+    display: none;
+    padding-top: 402px;
+    padding-bottom: 348px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 283px;
+    padding-bottom: 342px;
+
+    &--success {
+      padding-top: 162px;
+      padding-bottom: 463px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 244px;
+    padding-bottom: 403px;
+
+    &--success {
+      padding-top: 145px;
+      padding-bottom: 502px;
+    }
+  }
+}
+
+.modal-container__failure {
+  display: block;
+  position: relative;
+  margin: auto;
+}
+
+.modal-container__success {
+  display: none;
+  position: relative;
+  margin: auto;
+}
