@@ -47,6 +47,7 @@
   color: #000000;
   box-sizing: border-box;
   padding: 10px 33px 10px 62px;
+  max-height: 46px;
 
   &:nth-child(3n) {
     @media (min-width: @desktop-width) {
@@ -77,4 +78,18 @@
   position: absolute;
   top: 15px;
   left: 15px;
+}
+
+.user-experience__list.user-experience-list__input[type="radio"]:hover,
+.user-experience-list__input[type="radio"]:focus-within + .user-experience-list__marker {
+  background-color: #e5e5e5;
+  cursor: pointer;
+}
+
+.user-experience-list__input[type="radio"]:active + .user-experience-list__marker {
+  background-color: #d5d5d5;
+}
+
+.user-experience-list__input[type="radio"]:active + .user-experience-list__marker::after {
+  background-color: rgba(51, 51, 51, 0.7);
 }

@@ -1,6 +1,6 @@
 .socials-list {
   list-style-type: none;
-  margin: 0 auto 47px;
+  margin: 0 auto 45px;
   padding: 0;
   display: flex;
   justify-content: center;
@@ -23,6 +23,22 @@
   position: absolute;
   top: 25%;
   left: 25%;
-  color: #ffffff;
+  fill: currentColor;
 }
 
+.socials-list__link:hover,
+.socials-list__link:focus-visible {
+  background-color: #669ec0;
+  outline: none;
+  cursor: pointer;
+}
+
+.socials-list__link:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.socials-list__link:disabled {
+  background-color: #e5e5e5;
+  color: rgba(255, 255, 255, 0.3);
+}

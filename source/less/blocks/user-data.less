@@ -96,7 +96,7 @@
   line-height: 26px;
   font-weight: 700;
   text-align: left;
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0);
   min-width: 280px;
   box-sizing: border-box;
 
@@ -117,7 +117,7 @@
   line-height: 26px;
   font-weight: 700;
   text-align: left;
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 1);
   resize: none;
   min-width: 280px;
   min-height: 150px;
@@ -133,6 +133,20 @@
   @media (min-width: @desktop-width) {
     min-width: 768px;
   }
+}
+
+.user-data__text:hover,
+.user-data__input:hover {
+  color: #000000;
+  background-color: #e5e5e5;
+  outline: none;
+}
+
+.user-data__text:focus-within,
+.user-data__input:focus-within {
+  color: #000000;
+  background-color: #ffffff;
+  outline: solid 4px #e5e5e5;
 }
 
 .user-data__submit {
