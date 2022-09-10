@@ -9,6 +9,10 @@
   <link rel="apple-touch-icon" href="images/favicons/apple-icon-180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/ptsans.woff" as="font">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
 </head>
 
 <body class="page-body">
@@ -75,13 +79,13 @@
             <a class="photo-card__link" href="#">
               <picture>
                 <source media="(min-width: 768px)" type="image/webp"
-                  srcset="../images/boris-photo-webp.webp 1x, ../images/boris-photo-webp@2x.webp 2x">
+                  srcset="../images/boris-photo.webp 1x, ../images/boris-photo@2x.webp 2x">
                 <source type="image/webp"
-                  srcset="../images/boris-photo-mobile-webp.webp 1x, ../images/boris-photo-mobile-webp@2x.webp 2x">
+                  srcset="../images/boris-photo-mobile.webp 1x, ../images/boris-photo-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)"
                   srcset="../images/boris-photo.jpg 1x, ../images/boris-photo@2x.jpg 2x">
                 <img class="photo-card__photo photo-card__photo--big" src="../images/boris-photo-mobile.jpg"
-                  alt="Фото дороги" width="1200" height="400" srcset="../images/boris-photo-mobile@2x.jpg 2x">
+                  alt="Фото дороги" width="280" height="280" srcset="../images/boris-photo-mobile@2x.jpg 2x">
               </picture>
             </a>
             <div class="photo-card__wrapper">
@@ -103,6 +107,10 @@
           <li class="photo-collection__item photo-card">
             <a class="photo-card__link" href="#">
               <picture>
+                <source media="(min-width: 1200px)" type="image/webp"
+                  srcset="../images/sergey-photo-desktop.webp 1x, ../images/sergey-photo-desktop@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="../images/sergey-photo.webp 1x, ../images/sergey-photo@2x.webp 2x">
                 <source media="(min-width: 1200px)"
                   srcset="../images/sergey-photo-desktop.jpg 1x, ../images/sergey-photo-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)"
@@ -131,11 +139,11 @@
             <a class="photo-card__link photo-card__photo--stretch" href="#">
               <picture>
                 <source media="(min-width: 768px)" type="image/webp"
-                  srcset="../images/petr-photo-webp.webp 1x, ../images/petr-photo-webp@2x.webp 2x">
+                  srcset="../images/petr-photo.webp 1x, ../images/petr-photo@2x.webp 2x">
                 <source type="image/webp"
-                  srcset="../images/petr-photo-mobile-webp.webp 1x, ../images/petr-photo-mobile-webp@2x.webp 2x">
+                  srcset="../images/petr-photo-mobile.webp 1x, ../images/petr-photo-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="../images/petr-photo.jpg 1x, ../images/petr-photo@2x.jpg 2x">
-                <img class="photo-card__photo" src="../images/petr-photo-mobile.jpg" alt="Фото горного серпантина"
+                <img class="photo-card__photo" loading="lazy" src="../images/petr-photo-mobile.jpg" alt="Фото горного серпантина"
                   height="280" width="280" srcset="../images/petr-photo-mobile@2x.jpg 2x">
               </picture>
             </a>
@@ -159,12 +167,12 @@
             <a class="photo-card__link" href="#">
               <picture>
                 <source media="(min-width: 768px)" type="image/webp"
-                  srcset="../images/anton-photo-webp.webp 1x, ../images/anton-photo-webp@2x.webp 2x">
+                  srcset="../images/anton-photo.webp 1x, ../images/anton-photo@2x.webp 2x">
                 <source type="image/webp"
-                  srcset="../images/anton-photo-mobile-webp.webp 1x, ../images/anton-photo-mobile-webp@2x.webp 2x">
+                  srcset="../images/anton-photo-mobile.webp 1x, ../images/anton-photo-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)"
                   srcset="../images/anton-photo.jpg 1x, ../images/anton-photo@2x.jpg 2x">
-                <img class="photo-card__photo" src="../images/anton-photo-mobile.jpg" alt="Фото каменного моста"
+                <img class="photo-card__photo" loading="lazy" src="../images/anton-photo-mobile.jpg" alt="Фото каменного моста"
                   height="280" width="280" srcset="../images/anton-photo-mobile@2x.jpg 2x">
               </picture>
             </a>
@@ -176,8 +184,7 @@
               <div class="photo-card__counter like-counter">
                 <button class="like-counter__button"><svg aria-hidden="true" focusable="false" width="23" height="21"
                     viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.3"
-                      d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
+                    <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
                       fill="currentColor" />
                   </svg></button>
                 <span class="like-counter__quantity">254</span>
@@ -238,9 +245,9 @@
           </ul>
         </div>
         <div class="page-footer__developer htmlacademy">
-          <p class="htmlacademy__text">Разработано</p>
           <a class="htmlacademy__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg aria-hidden="true" focusable="false" width="27" height="35" viewBox="0 0 27 35">
+            <span class="htmlacademy__text">Разработано</span>
+            <svg class="htmlacademy__svg" aria-hidden="true" focusable="false" width="27" height="35" viewBox="0 0 27 35">
               <use href="images/sprite.svg#htmlacademy-logo" />
             </svg>
           </a>

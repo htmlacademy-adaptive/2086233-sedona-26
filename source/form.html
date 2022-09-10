@@ -9,6 +9,10 @@
   <link rel="apple-touch-icon" href="images/favicons/apple-icon-180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/ptsans.woff" as="font">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
 </head>
 
 <body class="page-body">
@@ -111,19 +115,19 @@
             <legend class="user-data__title">Ваше Общее впечатление:</legend>
             <ul class="form-review__impression-list user-experience-list">
               <li class="user-experience-list__item">
-                <label class="user-experience-list__mark" for="good-experience">Скорее положительное</label>
+                <label class="user-experience-list__mark" for="good-experience">Скорее положительное
                 <input class="user-experience-list__input" type="radio" name="experience" id="good-experience" checked>
-                <span class="user-experience-list__marker"></span>
+                <span class="user-experience-list__marker"></span></label>
               </li>
               <li class="user-experience-list__item">
-                <label class="user-experience-list__mark" for="bad-experience">Скорее отрицательное</label>
+                <label class="user-experience-list__mark" for="bad-experience">Скорее отрицательное
                 <input class="user-experience-list__input" type="radio" name="experience" id="bad-experience">
-                <span class="user-experience-list__marker"></span>
+                <span class="user-experience-list__marker"></span></label>
               </li>
               <li class="user-experience-list__item">
-                <label class="user-experience-list__mark" for="doubtful-experience">Затрудняюсь ответить</label>
+                <label class="user-experience-list__mark" for="doubtful-experience">Затрудняюсь ответить
                 <input class="user-experience-list__input" type="radio" name="experience" id="doubtful-experience">
-                <span class="user-experience-list__marker"></span>
+                <span class="user-experience-list__marker"></span></label>
               </li>
             </ul>
           </fieldset>
@@ -131,24 +135,24 @@
             <legend class="user-data__title user-data__title--narrow">Посещенные достопримечательности:</legend>
             <ul class="user-data__list visited-places">
               <li class="visited-places__item">
-                <label class="visited-places__control" for="devil-bridge">Мост Дьявола</label>
+                <label class="visited-places__control" for="devil-bridge">Мост Дьявола
                 <input class="visited-places__input" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
-                <span class="visited-places__marker"></span>
+                <span class="visited-places__marker"></span></label>
               </li>
               <li class="visited-places__item">
-                <label class="visited-places__control" for="bell-mountain">Гора-Колокол</label>
+                <label class="visited-places__control" for="bell-mountain">Гора-Колокол
                 <input class="visited-places__input" type="checkbox" name="bell-mountain" id="bell-mountain" checked>
-                <span class="visited-places__marker"></span>
+                <span class="visited-places__marker"></span></label>
               </li>
               <li class="visited-places__item">
-                <label class="visited-places__control" for="slide-park">Слайд-парк</label>
+                <label class="visited-places__control" for="slide-park">Слайд-парк
                 <input class="visited-places__input" type="checkbox" name="slide-park" id="slide-park" checked>
-                <span class="visited-places__marker"></span>
+                <span class="visited-places__marker"></span></label>
               </li>
               <li class="visited-places__item">
-                <label class="visited-places__control visited-places__control--rocks" for="red-rocks">Красные скалы</label>
+                <label class="visited-places__control visited-places__control--rocks" for="red-rocks">Красные скалы
                 <input class="visited-places__input" type="checkbox" name="red-rocks" id="red-rocks">
-                <span class="visited-places__marker"></span>
+                <span class="visited-places__marker"></span></label>
               </li>
             </ul>
           </fieldset>
@@ -201,9 +205,9 @@
           </ul>
         </div>
         <div class="page-footer__developer htmlacademy">
-          <p class="htmlacademy__text">Разработано</p>
           <a class="htmlacademy__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg aria-hidden="true" focusable="false" width="27" height="35" viewBox="0 0 27 35">
+            <span class="htmlacademy__text">Разработано</span>
+            <svg class="htmlacademy__svg" aria-hidden="true" focusable="false" width="27" height="35" viewBox="0 0 27 35">
               <use href="images/sprite.svg#htmlacademy-logo" />
             </svg>
           </a>

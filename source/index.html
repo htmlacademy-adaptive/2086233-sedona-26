@@ -9,6 +9,10 @@
   <link rel="apple-touch-icon" href="images/favicons/apple-icon-180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/ptsans.woff" as="font">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
 </head>
 
 <body class="page-body">
@@ -77,7 +81,9 @@
                   течёт своя жизнь</p>
               </div>
               <picture>
+                <source media="(min-width: 1200px)" type="image/webp" srcset="../images/town-sight-desktop.webp 1x, ../images/town-sight-desktop@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="../images/town-sight-desktop.jpg 1x, ../images/town-sight-desktop@2x.jpg 2x">
+                <source srcset="../images/town-sight-advantage-1.webp 1x, ../images/town-sight-advantage-1.webp 2x">
               <img class="advantages-list__town-sight" src="../images/town-sight-advantage-1.jpg" alt="Вид города"
                 width="320" height="260">
               </picture>
@@ -123,7 +129,9 @@
               </div>
               <div class="advantages-list__bridge-image">
               <picture>
+                <source media="(min-width: 1200px)" srcset="../images/devil-bridge-desktop.webp 1x, ../images/devil-bridge-desktop@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="../images/devil-bridge-desktop.jpg 1x, ../images/devil-bridge-desktop@2x.jpg 2x">
+                <source srcset="../images/devil-bridge-advantage-2.webp 1x, ../images/devil-bridge-advantage-2.webp 2x">
                   <img class="advantages-list__bridge-image" src="../images/devil-bridge-advantage-2.jpg" alt="Мост дьявола"
                   width="320" height="260" srcset="../images/devil-bridge-advantage-2@2x.jpg 2x">
               </picture>
@@ -163,7 +171,7 @@
       </section>
     </main>
     <footer class="page-footer">
-      <iframe class="page-footer__map"
+      <iframe class="page-footer__map" loading="lazy"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d702759.2288644249!2d-111.85680689912354!3d35.09283089773499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da300cd6a52d3%3A0xd0b62ffa7e756ca6!2sSedona!5e0!3m2!1sru!2sru!4v1660904434362!5m2!1sru!2sru"
         width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -202,9 +210,9 @@
           </ul>
         </div>
         <div class="page-footer__developer htmlacademy">
-          <p class="htmlacademy__text">Разработано</p>
           <a class="htmlacademy__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg aria-hidden="true" focusable="false" width="27" height="35" viewBox="0 0 27 35">
+            <span class="htmlacademy__text">Разработано</span>
+            <svg class="htmlacademy__svg" aria-hidden="true" focusable="false" width="27" height="35" viewBox="0 0 27 35">
               <use href="images/sprite.svg#htmlacademy-logo" />
             </svg>
           </a>
