@@ -21,7 +21,7 @@
       <nav class="main-header__navigation navigation">
         <a class="navigation__logo" href="#">
           <svg width="185" height="96" viewBox="0 0 185 96">
-            <use href="images/sprite.svg#logo">
+            <use href="images/sprite.svg#logo"/>
           </svg>
         </a>
         <div class="navigation__list-wrapper navigation__list-wrapper--opened navigation__list-wrapper--nojs">
@@ -39,13 +39,13 @@
               <a class="menu__link menu__link--academy" href="http://htmlacademy.ru">HTML Academy</a>
             </li>
           </ul>
-          <button class="menu__toggle" type="button">
+          <button class="navigation__toggle" type="button">
             <span class="visually-hidden">Открыть меню.</span>
-            <svg class="menu__burger" aria-hidden="true" focusable="false" width="23" height="22" viewBox="0 0 23 22">
+            <svg class="navigation__burger" aria-hidden="true" focusable="false" width="23" height="22" viewBox="0 0 23 22">
               <use href="images/sprite.svg#menu-burger" />
             </svg>
           </button>
-          <button class="menu__close" type="button">
+          <button class="navigation__close" type="button">
             <span class="visually-hidden">Закрыть меню.</span>
             <svg class="close-cross" aria-hidden="true" focusable="false" width="23" height="23" viewBox="0 0 23 23">
               <use href="images/sprite.svg#cross" />
@@ -91,7 +91,7 @@
             <ul class="advantages-list__features features-list">
               <li class="features-list__item features-wrap">
                 <svg aria-hidden="true" focusable="false" class="features-wrap__icon features-wrap__icon--house" width="39" height="37"
-                  viewBox="0 0 39 37" alt="Иконка-дом">
+                  viewBox="0 0 39 37" aria-label="Иконка-дом">
                   <use href="images/sprite.svg#icon-house" />
                 </svg>
                 <h3 class="features-wrap__title features-wrap__title--1">Жилье</h3>
@@ -99,7 +99,7 @@
                   мотеле, всё как в кино&#33;</p>
               </li>
               <li class="features-list__item features-wrap ">
-                <svg aria-hidden="true" focusable="false" class="features-wrap__icon features-wrap__icon--burger" alt="Иконка-бургер" width="40"
+                <svg aria-hidden="true" focusable="false" class="features-wrap__icon features-wrap__icon--burger" aria-label="Иконка-бургер" width="40"
                   height="35" viewBox="0 0 40 35">
                   <use href="images/sprite.svg#icon-burger" />
                 </svg>
@@ -109,7 +109,7 @@
                   разочаруетесь&#33;</p>
               </li>
               <li class="features-list__item features-wrap">
-                <svg aria-hidden="true" focusable="false" class="features-wrap__icon features-wrap__icon--gift" alt="Иконка-презент" width="40"
+                <svg aria-hidden="true" focusable="false" class="features-wrap__icon features-wrap__icon--gift" aria-label="Иконка-презент" width="40"
                   height="40" viewBox="0 0 32 38">
                   <use href="images/sprite.svg#icon-gift" />
                 </svg>
@@ -129,9 +129,9 @@
               </div>
               <div class="advantages-list__bridge-image">
               <picture>
-                <source media="(min-width: 1200px)" srcset="../images/devil-bridge-desktop.webp 1x, ../images/devil-bridge-desktop@2x.webp 2x">
+                <source media="(min-width: 1200px)" type="image/webp" srcset="../images/devil-bridge-desktop.webp 1x, ../images/devil-bridge-desktop@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="../images/devil-bridge-desktop.jpg 1x, ../images/devil-bridge-desktop@2x.jpg 2x">
-                <source srcset="../images/devil-bridge-advantage-2.webp 1x, ../images/devil-bridge-advantage-2.webp 2x">
+                <source type="image/webp" srcset="../images/devil-bridge-advantage-2.webp 1x, ../images/devil-bridge-advantage-2.webp 2x">
                   <img class="advantages-list__bridge-image" src="../images/devil-bridge-advantage-2.jpg" alt="Мост дьявола"
                   width="320" height="260" srcset="../images/devil-bridge-advantage-2@2x.jpg 2x">
               </picture>
@@ -173,8 +173,7 @@
     <footer class="page-footer">
       <iframe class="page-footer__map" loading="lazy"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d702759.2288644249!2d-111.85680689912354!3d35.09283089773499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da300cd6a52d3%3A0xd0b62ffa7e756ca6!2sSedona!5e0!3m2!1sru!2sru!4v1660904434362!5m2!1sru!2sru"
-        width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+        width="600" height="450" style="border: 0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
       <div class="page-footer__contacts socials ">
         <h2 class="socials__reference">&#35;visitSEDONA</h2>
         <div class="socials__listing">
