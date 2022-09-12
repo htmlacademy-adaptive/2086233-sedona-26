@@ -158,7 +158,35 @@
   text-align: center;
   text-transform: uppercase;
 
-  &--small-beauty {
+  &--beauty {
+    font-weight: 400;
+    margin-left: 32px;
+    max-width: 255px;
+
+    br {
+      display: none;
+    }
+
+    @media (min-width: @tablet-width) {
+      margin-left: 12px;
+      max-width: 152px;
+
+      br {
+        display: inline;
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      max-width: 275px;
+      padding: 0 5px 47px 50px;
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+  &--small {
     font-weight: 400;
     margin-left: 32px;
     max-width: 255px;
@@ -176,7 +204,7 @@
     }
 
     @media (min-width: @desktop-width) {
-      width: 400px;
+      max-width: 300px;
       padding: 0 5px 47px 50px;
 
       br {
@@ -192,6 +220,14 @@
     @media (min-width: @tablet-width) {
       border-bottom: none;
       padding-bottom: 27px;
+    }
+  }
+
+  &--tourists {
+    @media (min-width: @desktop-width) {
+      max-width: 300px;
+      margin-left: 50px;
+      padding-bottom: 45px;
     }
   }
 }
