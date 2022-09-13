@@ -5,7 +5,7 @@
 }
 
 .inner-promo__title {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -20,14 +20,24 @@
 }
 
 .inner-promo__text {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 1;
   font-weight: 400;
   text-transform: uppercase;
 
   &--higher {
-    line-height: 1.25;
+    margin: 0;
+    padding: 5px 0 15px 0;
+    line-height: 1.4;
+
+    @media (min-width: @tablet-width) {
+      padding: 5px 0 20px 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 10px 0 15px 0;
+    }
   }
 }
 
